@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ai-slop — Interactive Projects</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1115;
+      --surface: #171a21;
+      --border: #262b36;
+      --text: #e6e9ef;
+      --muted: #9aa3b2;
+      --accent: #6ea8fe;
+      --accent-hover: #8bb9fe;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fa;
+        --surface: #ffffff;
+        --border: #e1e4e8;
+        --text: #1f2328;
+        --muted: #59636e;
+        --accent: #0969da;
+        --accent-hover: #0550ae;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+    header {
+      margin-bottom: 2.5rem;
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2rem;
+      letter-spacing: -0.02em;
+    }
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      display: block;
+      padding: 1.25rem 1.4rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .card h2 {
+      margin: 0 0 0.4rem;
+      font-size: 1.15rem;
+      color: var(--accent);
+    }
+    .card:hover h2 {
+      color: var(--accent-hover);
+    }
+    .card p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--muted);
+    }
+    .path {
+      display: inline-block;
+      margin-top: 0.85rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>ai-slop</h1>
+      <p class="subtitle">Static web experiments &amp; interactive tools hosted on GitHub Pages.</p>
+    </header>
+
+    <section class="grid" aria-label="Projects">
+      <a class="card" href="./wow-forever-atlas/">
+        <h2>WoW: Forever · Interactive Leveling Journey Atlas</h2>
+        <p>Interactive World &amp; Regional Map visualizing open-source 1–60 leveling routes across Azeroth for World of Warcraft: Forever.</p>
+        <span class="path">./wow-forever-atlas/</span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
